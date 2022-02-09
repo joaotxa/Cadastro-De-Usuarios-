@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220209 13:02:44.701" rpa="false" schemaversion="2">
-<suite id="s1" name="Cadastro" source="C:\Users\Joao\Desktop\Prova\Cadastro_Usuarios\tests\cadastro.robot">
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220209 13:37:49.966" rpa="false" schemaversion="2">
+<suite id="s1" name="Cadastro" source="C:\Users\Joao\Desktop\Cadastro\cadastro_Usuarios\tests\cadastro.robot">
 <test id="s1-t1" name="Cenário: Cadastro de usuários">
 <kw name="Abrir navegador" library="Resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220209 13:02:46.008" level="INFO">Opening browser 'chrome' to base url 'http://prova.stefanini-jgr.com.br/teste/qa/'.</msg>
-<status status="PASS" starttime="20220209 13:02:46.008" endtime="20220209 13:03:00.899"/>
+<msg timestamp="20220209 13:37:52.009" level="INFO">Opening browser 'chrome' to base url 'http://prova.stefanini-jgr.com.br/teste/qa/'.</msg>
+<status status="PASS" starttime="20220209 13:37:52.001" endtime="20220209 13:38:02.860"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220209 13:03:00.899" endtime="20220209 13:03:01.277"/>
+<status status="PASS" starttime="20220209 13:38:02.860" endtime="20220209 13:38:03.215"/>
 </kw>
-<status status="PASS" starttime="20220209 13:02:46.000" endtime="20220209 13:03:01.277"/>
+<status status="PASS" starttime="20220209 13:37:52.001" endtime="20220209 13:38:03.215"/>
 </kw>
 <kw name="Dado que estou na página home do site">
 <kw name="Acessar a página home do site" library="Resource">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Cadastro de usuários</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220209 13:03:01.392" level="INFO">Page title is 'Cadastro de usuários'.</msg>
-<status status="PASS" starttime="20220209 13:03:01.285" endtime="20220209 13:03:01.392"/>
+<msg timestamp="20220209 13:38:03.294" level="INFO">Page title is 'Cadastro de usuários'.</msg>
+<status status="PASS" starttime="20220209 13:38:03.215" endtime="20220209 13:38:03.294"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//h2[normalize-space()='Formulário']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220209 13:03:01.392" endtime="20220209 13:03:02.020"/>
+<status status="PASS" starttime="20220209 13:38:03.294" endtime="20220209 13:38:03.589"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220209 13:03:02.864" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220209 13:03:02.020" endtime="20220209 13:03:02.864"/>
+<msg timestamp="20220209 13:38:04.229" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220209 13:38:03.589" endtime="20220209 13:38:04.229"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:01.285" endtime="20220209 13:03:02.864"/>
+<status status="PASS" starttime="20220209 13:38:03.215" endtime="20220209 13:38:04.229"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:01.277" endtime="20220209 13:03:02.864"/>
+<status status="PASS" starttime="20220209 13:38:03.215" endtime="20220209 13:38:04.229"/>
 </kw>
 <kw name="E que tenha preenchido e cadastrado os dados do Nome, E-mail e Senha">
 <kw name="Prenchimento dos dados do usuario 1" library="Resource">
@@ -44,200 +44,200 @@
 <arg>id=name</arg>
 <arg>João Victor de Araujo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:02.911" level="INFO">Typing text 'João Victor de Araujo' into text field 'id=name'.</msg>
-<status status="PASS" starttime="20220209 13:03:02.911" endtime="20220209 13:03:05.147"/>
+<msg timestamp="20220209 13:38:04.229" level="INFO">Typing text 'João Victor de Araujo' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20220209 13:38:04.229" endtime="20220209 13:38:05.131"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=email</arg>
 <arg>Joaotxa@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:05.147" level="INFO">Typing text 'Joaotxa@gmail.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20220209 13:03:05.147" endtime="20220209 13:03:05.759"/>
+<msg timestamp="20220209 13:38:05.131" level="INFO">Typing text 'Joaotxa@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20220209 13:38:05.131" endtime="20220209 13:38:05.681"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=password</arg>
 <arg>qa123456</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:05.767" level="INFO">Typing text 'qa123456' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20220209 13:03:05.759" endtime="20220209 13:03:06.378"/>
+<msg timestamp="20220209 13:38:05.681" level="INFO">Typing text 'qa123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20220209 13:38:05.681" endtime="20220209 13:38:06.085"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=register</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:06.378" level="INFO">Clicking element 'id=register'.</msg>
-<status status="PASS" starttime="20220209 13:03:06.378" endtime="20220209 13:03:07.053"/>
+<msg timestamp="20220209 13:38:06.085" level="INFO">Clicking element 'id=register'.</msg>
+<status status="PASS" starttime="20220209 13:38:06.085" endtime="20220209 13:38:06.518"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220209 13:03:07.550" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220209 13:03:07.053" endtime="20220209 13:03:07.550"/>
+<msg timestamp="20220209 13:38:06.951" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220209 13:38:06.518" endtime="20220209 13:38:06.951"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:02.911" endtime="20220209 13:03:07.550"/>
+<status status="PASS" starttime="20220209 13:38:04.229" endtime="20220209 13:38:06.951"/>
 </kw>
 <kw name="Prenchimento dos dados do usuario 2" library="Resource">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=name</arg>
 <arg>Anderson White</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:07.550" level="INFO">Typing text 'Anderson White' into text field 'id=name'.</msg>
-<status status="PASS" starttime="20220209 13:03:07.550" endtime="20220209 13:03:07.887"/>
+<msg timestamp="20220209 13:38:06.951" level="INFO">Typing text 'Anderson White' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20220209 13:38:06.951" endtime="20220209 13:38:07.486"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=email</arg>
 <arg>Andersontxa@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:07.887" level="INFO">Typing text 'Andersontxa@gmail.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20220209 13:03:07.887" endtime="20220209 13:03:08.242"/>
+<msg timestamp="20220209 13:38:07.486" level="INFO">Typing text 'Andersontxa@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20220209 13:38:07.486" endtime="20220209 13:38:07.895"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=password</arg>
 <arg>qa123456</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:08.242" level="INFO">Typing text 'qa123456' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20220209 13:03:08.242" endtime="20220209 13:03:08.504"/>
+<msg timestamp="20220209 13:38:07.903" level="INFO">Typing text 'qa123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20220209 13:38:07.903" endtime="20220209 13:38:08.214"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=register</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:08.504" level="INFO">Clicking element 'id=register'.</msg>
-<status status="PASS" starttime="20220209 13:03:08.504" endtime="20220209 13:03:08.661"/>
+<msg timestamp="20220209 13:38:08.222" level="INFO">Clicking element 'id=register'.</msg>
+<status status="PASS" starttime="20220209 13:38:08.222" endtime="20220209 13:38:08.372"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220209 13:03:09.186" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220209 13:03:08.661" endtime="20220209 13:03:09.186"/>
+<msg timestamp="20220209 13:38:08.826" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220209 13:38:08.372" endtime="20220209 13:38:08.826"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:07.550" endtime="20220209 13:03:09.186"/>
+<status status="PASS" starttime="20220209 13:38:06.951" endtime="20220209 13:38:08.842"/>
 </kw>
 <kw name="Prenchimento dos dados do usuario 3" library="Resource">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=name</arg>
 <arg>Diego Alexandrino</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:09.186" level="INFO">Typing text 'Diego Alexandrino' into text field 'id=name'.</msg>
-<status status="PASS" starttime="20220209 13:03:09.186" endtime="20220209 13:03:09.583"/>
+<msg timestamp="20220209 13:38:08.842" level="INFO">Typing text 'Diego Alexandrino' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20220209 13:38:08.842" endtime="20220209 13:38:09.242"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=email</arg>
 <arg>Diegotxa@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:09.591" level="INFO">Typing text 'Diegotxa@gmail.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20220209 13:03:09.583" endtime="20220209 13:03:09.969"/>
+<msg timestamp="20220209 13:38:09.242" level="INFO">Typing text 'Diegotxa@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20220209 13:38:09.242" endtime="20220209 13:38:09.688"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=password</arg>
 <arg>qa123456</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:09.969" level="INFO">Typing text 'qa123456' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20220209 13:03:09.969" endtime="20220209 13:03:10.243"/>
+<msg timestamp="20220209 13:38:09.688" level="INFO">Typing text 'qa123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20220209 13:38:09.688" endtime="20220209 13:38:10.003"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=register</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:10.251" level="INFO">Clicking element 'id=register'.</msg>
-<status status="PASS" starttime="20220209 13:03:10.243" endtime="20220209 13:03:10.354"/>
+<msg timestamp="20220209 13:38:10.011" level="INFO">Clicking element 'id=register'.</msg>
+<status status="PASS" starttime="20220209 13:38:10.003" endtime="20220209 13:38:10.151"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220209 13:03:10.795" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220209 13:03:10.354" endtime="20220209 13:03:10.810"/>
+<msg timestamp="20220209 13:38:10.602" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220209 13:38:10.151" endtime="20220209 13:38:10.602"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:09.186" endtime="20220209 13:03:10.810"/>
+<status status="PASS" starttime="20220209 13:38:08.842" endtime="20220209 13:38:10.602"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:02.911" endtime="20220209 13:03:10.810"/>
+<status status="PASS" starttime="20220209 13:38:04.229" endtime="20220209 13:38:10.602"/>
 </kw>
 <kw name="Quando o sistema deverá apresentar os usuários cadastrados">
 <kw name="Usuário 1" library="Resource">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id=tdUserId1</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220209 13:03:10.810" endtime="20220209 13:03:10.894"/>
+<status status="PASS" starttime="20220209 13:38:10.602" endtime="20220209 13:38:10.695"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:10.810" endtime="20220209 13:03:10.902"/>
+<status status="PASS" starttime="20220209 13:38:10.602" endtime="20220209 13:38:10.695"/>
 </kw>
 <kw name="Usuário 2" library="Resource">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id=tdUserName2</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220209 13:03:10.902" endtime="20220209 13:03:10.967"/>
+<status status="PASS" starttime="20220209 13:38:10.695" endtime="20220209 13:38:10.774"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:10.902" endtime="20220209 13:03:10.967"/>
+<status status="PASS" starttime="20220209 13:38:10.695" endtime="20220209 13:38:10.774"/>
 </kw>
 <kw name="Usuário 3" library="Resource">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//td[@id='tdUserEmail3']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220209 13:03:10.967" endtime="20220209 13:03:11.030"/>
+<status status="PASS" starttime="20220209 13:38:10.789" endtime="20220209 13:38:10.852"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220209 13:03:11.499" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220209 13:03:11.030" endtime="20220209 13:03:11.499"/>
+<msg timestamp="20220209 13:38:11.301" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220209 13:38:10.852" endtime="20220209 13:38:11.301"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:10.967" endtime="20220209 13:03:11.499"/>
+<status status="PASS" starttime="20220209 13:38:10.774" endtime="20220209 13:38:11.301"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:10.810" endtime="20220209 13:03:11.499"/>
+<status status="PASS" starttime="20220209 13:38:10.602" endtime="20220209 13:38:11.301"/>
 </kw>
 <kw name="Então excluir todos os usuário cadastrados">
 <kw name="Exluir usuário 1" library="Resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=removeUser1</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:11.514" level="INFO">Clicking element 'id=removeUser1'.</msg>
-<status status="PASS" starttime="20220209 13:03:11.514" endtime="20220209 13:03:11.699"/>
+<msg timestamp="20220209 13:38:11.333" level="INFO">Clicking element 'id=removeUser1'.</msg>
+<status status="PASS" starttime="20220209 13:38:11.317" endtime="20220209 13:38:11.513"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220209 13:03:12.235" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220209 13:03:11.699" endtime="20220209 13:03:12.235"/>
+<msg timestamp="20220209 13:38:11.986" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220209 13:38:11.513" endtime="20220209 13:38:11.986"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:11.514" endtime="20220209 13:03:12.235"/>
+<status status="PASS" starttime="20220209 13:38:11.317" endtime="20220209 13:38:11.986"/>
 </kw>
 <kw name="Exluir usuário 2" library="Resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=removeUser2</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:12.235" level="INFO">Clicking element 'id=removeUser2'.</msg>
-<status status="PASS" starttime="20220209 13:03:12.235" endtime="20220209 13:03:12.404"/>
+<msg timestamp="20220209 13:38:11.986" level="INFO">Clicking element 'id=removeUser2'.</msg>
+<status status="PASS" starttime="20220209 13:38:11.986" endtime="20220209 13:38:12.205"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220209 13:03:12.845" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220209 13:03:12.412" endtime="20220209 13:03:12.845"/>
+<msg timestamp="20220209 13:38:12.655" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220209 13:38:12.213" endtime="20220209 13:38:12.655"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:12.235" endtime="20220209 13:03:12.845"/>
+<status status="PASS" starttime="20220209 13:38:11.986" endtime="20220209 13:38:12.655"/>
 </kw>
 <kw name="Exluir usuário 3" library="Resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=removeUser3</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220209 13:03:12.861" level="INFO">Clicking element 'id=removeUser3'.</msg>
-<status status="PASS" starttime="20220209 13:03:12.861" endtime="20220209 13:03:13.032"/>
+<msg timestamp="20220209 13:38:12.655" level="INFO">Clicking element 'id=removeUser3'.</msg>
+<status status="PASS" starttime="20220209 13:38:12.655" endtime="20220209 13:38:12.847"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220209 13:03:13.582" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220209 13:03:13.032" endtime="20220209 13:03:13.582"/>
+<msg timestamp="20220209 13:38:13.436" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220209 13:38:12.847" endtime="20220209 13:38:13.436"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:12.861" endtime="20220209 13:03:13.582"/>
+<status status="PASS" starttime="20220209 13:38:12.655" endtime="20220209 13:38:13.436"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:11.499" endtime="20220209 13:03:13.582"/>
+<status status="PASS" starttime="20220209 13:38:11.317" endtime="20220209 13:38:13.436"/>
 </kw>
 <kw name="Fechar navegador" library="Resource" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220209 13:03:13.582" endtime="20220209 13:03:18.111"/>
+<status status="PASS" starttime="20220209 13:38:13.436" endtime="20220209 13:38:19.317"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220209 13:03:18.111" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20220209 13:03:18.111" endtime="20220209 13:03:18.111"/>
+<msg timestamp="20220209 13:38:19.320" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220209 13:38:19.317" endtime="20220209 13:38:19.320"/>
 </kw>
-<status status="PASS" starttime="20220209 13:03:13.582" endtime="20220209 13:03:18.111"/>
+<status status="PASS" starttime="20220209 13:38:13.436" endtime="20220209 13:38:19.320"/>
 </kw>
-<status status="PASS" starttime="20220209 13:02:45.984" endtime="20220209 13:03:18.111"/>
+<status status="PASS" starttime="20220209 13:37:51.993" endtime="20220209 13:38:19.320"/>
 </test>
-<status status="PASS" starttime="20220209 13:02:44.701" endtime="20220209 13:03:18.127"/>
+<status status="PASS" starttime="20220209 13:37:49.966" endtime="20220209 13:38:19.328"/>
 </suite>
 <statistics>
 <total>
